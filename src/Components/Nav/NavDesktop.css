@@ -1,0 +1,129 @@
+/* Main Nav */
+
+#main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav #main-nav-container {
+    width: 80%;
+    border-bottom: solid var(--grey-blue) 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-left #menu {
+    display: none;
+}
+
+#main-nav #main-nav-container #main-nav-left,
+#main-nav #main-nav-container #main-nav-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#main-nav #main-nav-container #main-nav-left svg,
+#main-nav #main-nav-container #main-nav-right svg {
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+#main-nav #main-nav-container #main-nav-left #main-nav-links {
+    height: 100%;
+    display: flex;
+}
+
+#main-nav #main-nav-container #main-nav-left #main-nav-links a {
+    height: 100%;
+    border-bottom: solid transparent;
+    padding: 1.5rem 0;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+#main-nav #main-nav-container #main-nav-right img {
+    height: 50px;
+    cursor: pointer;
+    border: solid transparent;
+    border-radius: 1.5rem;
+    transition-duration: 0.5s;
+}
+
+#main-nav #main-nav-container #main-nav-right #nav-count {
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 0.75rem;
+    border-radius: 50px;
+    padding: 0.1rem 0.5rem;
+    position: relative;
+    left: 30px;
+    bottom: 17.5px;
+}
+
+/* Side Nav */
+
+#side-nav {
+    width: 250px;
+    background-color: var(--white);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    transition-duration: 1s;
+    z-index: 999;
+}
+
+#side-nav #side-nav-container #close {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+#side-nav #side-nav-container #side-nav-links h2 {
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+#nav #view {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#opacitor, #view {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 999;
+}
+
+#nav #view #view-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#nav #view svg {
+    cursor: pointer;
+    position: absolute;
+    right: 5rem;
+    top: -2rem;
+}
+
+/* Hover Effects */
+
+#main-nav #main-nav-container #main-nav-left #main-nav-links a:hover {
+    color: var(--dark-grey-blue);
+    border-bottom: solid var(--orange);
+}
+
+#main-nav #main-nav-container #main-nav-right img:hover {
+    border: solid var(--orange);
+}

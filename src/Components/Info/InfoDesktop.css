@@ -1,0 +1,79 @@
+#info {
+    width: 30rem;
+}
+
+#info h3 {
+    margin-bottom: 1rem;
+}
+
+#info h1 {
+    font-size: 2.9rem;
+    line-height: 3rem;
+}
+
+#info p {
+    margin: 1rem 0;
+}
+
+#info #info-price #info-discount {
+    display: flex;
+    align-items: center;
+}
+
+#info #info-price #info-discount a {
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    font-weight: var(--thick-weight);
+    border-radius: 5px;
+    padding: 0.25rem;
+    margin-left: 1rem;
+}
+
+#info #info-price p {
+    color: var(--grey-blue);
+    text-decoration: line-through;
+}
+
+#info #info-cart {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 4rem;
+    grid-gap: 1rem;
+}
+
+#info #info-cart #counter {
+    background-color: var(--light-grey-blue);
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info #info-cart #counter img {
+    cursor: pointer;
+}
+
+#info #info-cart a {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: var(--thick-weight);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info #info-cart a svg {
+    margin-right: 1rem;
+}
+
+/* Hover Effects */
+
+#info #info-cart #counter img:hover {
+    filter: opacity(0.5);
+}
+
+#info #info-cart a:hover {
+    filter: opacity(0.5);
+}

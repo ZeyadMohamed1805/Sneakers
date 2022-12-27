@@ -1,0 +1,14 @@
+#main {
+    min-height: calc(100vh - 8rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#main #main-container {
+    width: 80%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

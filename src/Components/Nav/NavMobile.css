@@ -1,0 +1,35 @@
+@media (max-width: 1000px) {
+    #main-nav #main-nav-container {
+        width: 100%;
+        padding: 0.625rem 1.5rem;
+        border-bottom: none;
+    }
+
+    #main-nav #main-nav-container #main-nav-left svg,
+    #main-nav #main-nav-container #main-nav-right svg {
+        margin-right: 1rem;
+    }
+
+    #main-nav #main-nav-container #main-nav-left #logo {
+        position: relative;
+        bottom: 0.125rem;
+    }
+
+    #main-nav #main-nav-container #main-nav-left #menu {
+        display: block;
+    }
+
+    #main-nav #main-nav-container #main-nav-left #main-nav-links {
+        display: none;
+    }
+
+    #opacitor #opacitor-content {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #main-nav #main-nav-container {
+        padding: 0.625rem 0.5rem;
+    }
+}

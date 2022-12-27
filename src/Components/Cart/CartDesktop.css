@@ -1,0 +1,80 @@
+#cart {
+    width: 375px;
+    min-height: fit-content;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--dark-grey-blue);
+    border-radius: 10px;
+    position: absolute;
+    top: 5.5rem;
+    right: 10%;
+    z-index: 500;
+}
+
+#cart #cart-header {
+    height: 50px;
+    width: 100%;
+    color: var(--black);
+    font-weight: var(--thick-weight);
+    padding: 1rem;
+    border-bottom: solid var(--grey-blue) 1px;
+}
+
+#cart #cart-empty {
+    height: 150px;
+    width: 100%;
+    color: var(--dark-grey-blue);
+    font-weight: var(--thick-weight);
+    place-items: center;
+}
+
+#cart #cart-addition {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 3rem;
+    grid-gap: 1rem;
+}
+
+#cart #cart-addition #cart-item {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cart #cart-addition #cart-item #thumbnail {
+    height: 3rem;
+    border-radius: 10px;
+}
+
+#cart #cart-addition #cart-item #item-paragraphs {
+    margin: 0 1rem;
+}
+
+#cart #cart-addition #cart-item #item-paragraphs p {
+    font-size: 1rem;
+}
+
+#cart #cart-addition #cart-item #delete {
+    height: 1rem;
+    cursor: pointer;
+    position: relative;
+    top: 0.75rem;
+}
+
+#cart #cart-addition #cart-item #item-paragraphs span {
+    color: var(--black);
+    font-weight: var(--thick-weight);
+}
+
+#cart #cart-addition a {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+/* Hover Effects */
+
+#cart #cart-addition a:hover {
+    filter: opacity(0.5);
+}
